@@ -1,9 +1,13 @@
 # Lab Setup
 
-This folder documents the setup of the SOC Home Lab.
+## Overview
+This section documents the deployment and configuration of the SOC Home Lab environment.
 
-Contents:
+## Components
 - VirtualBox configuration
-- Ubuntu installation
+- Ubuntu Server installation
 - Kali Linux installation
 - Windows virtual machine setup
+
+## Status
+🚧 In Progress
