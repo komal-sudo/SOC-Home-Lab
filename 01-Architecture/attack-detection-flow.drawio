@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" agent="Claude">
+  <diagram name="Attack to Response Flow" id="attack-response-flow">
+    <mxGraphModel dx="1813" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" value="Kali Linux" vertex="1">
+          <mxGeometry height="50" width="180" x="335" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="Windows Endpoint" vertex="1">
+          <mxGeometry height="50" width="180" x="335" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" value="Wazuh Agent" vertex="1">
+          <mxGeometry height="50" width="180" x="335" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;" value="Wazuh Manager" vertex="1">
+          <mxGeometry height="50" width="180" x="335" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="Detection Rule" vertex="1">
+          <mxGeometry height="50" width="180" x="335" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" value="Wazuh Alert" vertex="1">
+          <mxGeometry height="50" width="180" x="335" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;" value="SOC Analyst" vertex="1">
+          <mxGeometry height="50" width="180" x="335" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="Investigate" vertex="1">
+          <mxGeometry height="50" width="160" x="75" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="Identify Source" vertex="1">
+          <mxGeometry height="50" width="160" x="255" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="MITRE ATT&amp;CK Mapping" vertex="1">
+          <mxGeometry height="50" width="160" x="435" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="Response" vertex="1">
+          <mxGeometry height="50" width="160" x="615" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-12" edge="1" parent="1" source="ACPWkxNm-7caZsXkpoZa-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" target="ACPWkxNm-7caZsXkpoZa-2" value="Controlled Attack">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-13" edge="1" parent="1" source="ACPWkxNm-7caZsXkpoZa-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" target="ACPWkxNm-7caZsXkpoZa-3" value="Windows Security Event&#xa;+ Sysmon telemetry">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-14" edge="1" parent="1" source="ACPWkxNm-7caZsXkpoZa-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="ACPWkxNm-7caZsXkpoZa-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-15" edge="1" parent="1" source="ACPWkxNm-7caZsXkpoZa-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="ACPWkxNm-7caZsXkpoZa-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-16" edge="1" parent="1" source="ACPWkxNm-7caZsXkpoZa-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="ACPWkxNm-7caZsXkpoZa-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-17" edge="1" parent="1" source="ACPWkxNm-7caZsXkpoZa-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="ACPWkxNm-7caZsXkpoZa-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-18" edge="1" parent="1" source="ACPWkxNm-7caZsXkpoZa-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ACPWkxNm-7caZsXkpoZa-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-19" edge="1" parent="1" source="ACPWkxNm-7caZsXkpoZa-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ACPWkxNm-7caZsXkpoZa-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-20" edge="1" parent="1" source="ACPWkxNm-7caZsXkpoZa-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ACPWkxNm-7caZsXkpoZa-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-21" edge="1" parent="1" source="ACPWkxNm-7caZsXkpoZa-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ACPWkxNm-7caZsXkpoZa-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ACPWkxNm-7caZsXkpoZa-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font color=&quot;#dedede&quot;&gt;&lt;span style=&quot;font-size: 24px; text-wrap-mode: nowrap; background-color: rgb(53, 55, 56);&quot;&gt;&lt;b&gt;Attack Simulation Workflow&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="360" y="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

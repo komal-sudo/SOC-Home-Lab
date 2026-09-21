@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="SOC Home Lab" id="0">
+    <mxGraphModel dx="2115" dy="878" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="750" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;" value="SOC HOME LAB" vertex="1">
+          <mxGeometry height="40" width="300" x="390" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="router" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="Home Router&lt;br&gt;192.168.0.1" vertex="1">
+          <mxGeometry height="65" width="220" x="430" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="net" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=1;fontSize=13;align=center;verticalAlign=middle;" value="192.168.0.0/24" vertex="1">
+          <mxGeometry height="40" width="170" x="455" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="win" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=2;fontSize=14;align=center;verticalAlign=middle;" value="&lt;b&gt;WINDOWS&lt;/b&gt;&lt;br&gt;192.168.0.100&lt;br&gt;&lt;br&gt;Wazuh Agent&lt;br&gt;Sysmon" vertex="1">
+          <mxGeometry height="145" width="260" x="150" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ubuntu" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=2;fontSize=14;align=center;verticalAlign=middle;" value="&lt;b&gt;UBUNTU WAZUH VM&lt;/b&gt;&lt;br&gt;192.168.0.105&lt;br&gt;&lt;br&gt;Wazuh Manager&lt;br&gt;Wazuh Indexer&lt;br&gt;Wazuh Dashboard" vertex="1">
+          <mxGeometry height="170" width="300" x="690" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="kali" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=2;fontSize=14;align=center;verticalAlign=middle;" value="&lt;b&gt;KALI LINUX&lt;/b&gt;&lt;br&gt;Attack Simulator" vertex="1">
+          <mxGeometry height="85" width="260" x="150" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" edge="1" parent="1" source="router" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="net" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" edge="1" parent="1" source="net" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="win" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" edge="1" parent="1" source="net" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="ubuntu" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" edge="1" parent="1" source="kali" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=1;" target="win" value="Attack">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" edge="1" parent="1" source="win" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="ubuntu" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pxxYehhFwciQFFOZX9rA-2" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;shape=wire;dashed=1;dashPattern=1 4;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <mxPoint x="280" y="590" as="sourcePoint" />
+            <mxPoint x="280" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pxxYehhFwciQFFOZX9rA-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Attack Traffic" vertex="1">
+          <mxGeometry height="30" width="60" x="230" y="618" as="geometry" />
+        </mxCell>
+        <mxCell id="pxxYehhFwciQFFOZX9rA-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Windows" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="680" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
